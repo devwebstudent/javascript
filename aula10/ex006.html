@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area" onmouseover="">
+        Interaja...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area') // Nosso objeto a está diretamente ligado a nossa div
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        a.addEventListener('mousedown', segurar)
+        
+        function clicar() {
+            // Tudo que estiver aqui dentro só será disparado ao chamarmos o "clicar"
+            a.innerText = 'CLICOU!'
+            a.style.backgroundColor = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'ENTROU!'            
+        }
+
+        function sair() {
+            a.innerText = 'SAIU!'
+            a.style.backgroundColor = 'green'
+        }
+
+        function segurar() {
+        a.innerText = 'SEGUROU!'
+        a.style.backgroundColor = 'orange'
+        }
+    </script>
+</body>
+
+</html>
