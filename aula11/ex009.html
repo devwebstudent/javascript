@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10;
+            padding: 0;
+        }
+
+        h1 {
+            background-image: linear-gradient(to right, limegreen, yellow);
+            color: white;
+            text-align: center;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+        
+        strong {
+            color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sua Nacionalidade</h1>
+    <label for="inac">
+        <p>Qual país você nasceu?</p>
+    </label> 
+    <input type="text" name="nac" id="inac">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="ires"></div>
+
+    <script>
+        function verificar() {
+            var verificar = document.querySelector('input#inac')
+            var lugar = verificar.value
+            var res = document.querySelector('div#ires')
+
+            res.innerHTML = `<p>Você nasceu em <strong>${lugar}</strong>.</p>`
+
+            if (lugar == 'Brasil') {
+                res.innerHTML += `<p>Você é <strong>brasileiro!</strong></p>`
+            }
+
+            else {
+                res.innerHTML += `<p>Você é <strong>estrangeiro!</strong></p>`
+            }
+        }
+    </script>    
+</body>
+</html>
