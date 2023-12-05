@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section>
+        <div id="dados">
+            <label for="txtinicio">Início:</label> <input type="number" name="inicio" id="txtinicio"><br>
+            <label for="txtfim">Fim:</label> <input type="number" name="fim" id="txtfim"><br>
+            <label for="txtpasso">Passo:</label> <input type="number" name="passo" id="txtpasso"><br>
+
+            <input type="button" value="Contar" onclick="contar()"> <!-- Quando eu clicar, ele vai chamar o contar -->
+        </div>
+            
+        <div id="resultado">
+            <p>Preparando contagem...</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Curso em Vídeo.</p>
+    </footer>
+
+    <script src="script.js"></script>    
+</body>
+</html>
