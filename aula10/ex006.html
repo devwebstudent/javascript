@@ -31,7 +31,8 @@
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
         a.addEventListener('mousedown', segurar)
-        
+        a.addEventListener('mousewheel', scroll)
+
         function clicar() {
             // Tudo que estiver aqui dentro só será disparado ao chamarmos o "clicar"
             a.innerText = 'CLICOU!'
@@ -39,7 +40,7 @@
         }
 
         function entrar() {
-            a.innerText = 'ENTROU!'            
+            a.innerText = 'ENTROU!'
         }
 
         function sair() {
@@ -48,8 +49,12 @@
         }
 
         function segurar() {
-        a.innerText = 'SEGUROU!'
-        a.style.backgroundColor = 'orange'
+            a.innerText = 'SEGUROU!'
+            a.style.backgroundColor = 'orange'
+        }
+
+        function scroll() {
+            a.innerText = 'MOVENDO!'
         }
     </script>
 </body>
