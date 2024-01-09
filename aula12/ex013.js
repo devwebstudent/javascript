@@ -18,27 +18,27 @@ switch (diaSem) {
         console.log('Hoje é Domingo')
         break
     
-    case 1: //Se meu dia da semana for 1
+    case 1: 
         console.log('Hoje é Segunda')
         break
     
-    case 2: //Se meu dia da semana for 2
+    case 2: 
         console.log('Hoje é Terça')
         break
     
-    case 3: //Se meu dia da semana for 3
+    case 3: 
         console.log('Hoje é Quarta')
         break
 
-    case 4: //Se meu dia da semana for 4
+    case 4: 
         console.log('Hoje é Quinta')
         break
     
-    case 5: //Se meu dia da semana for 5
+    case 5: 
         console.log('Hoje é Sexta')
         break
 
-    case 6: //Se meu dia da semana for 6
+    case 6: 
         console.log('Hoje é Sábado')
         break
 
