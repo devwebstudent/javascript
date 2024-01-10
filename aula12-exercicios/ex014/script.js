@@ -2,27 +2,27 @@ function carregar() {
     var mensagem = window.document.getElementById('msg') // Recebendo nossa div#msg
     var imagem = window.document.getElementById('imagem') // Recebendo nossa imagem da manhã
     var data = new Date() // Para pegarmos a data atual.
-    var hora = data.getHours() //Para pegarmos a hora atual do sistema.
+    var hora = data.getHours() // Para pegarmos a hora atual do sistema.
     var minuto = data.getMinutes() // Professor não colocou, eu que adicionei depois
 
     if (hora >= 0 && hora < 12) {
         //BOM DIA
         mensagem.innerHTML = `Agora são ${hora}h${minuto}m. <strong>Bom dia!</strong>`
-        imagem.src = 'manha.png'
+        imagem.src = 'manha.png' // Para carregar nossa imagem da manhã
         document.body.style.backgroundColor = '#e2cd9f'
     }
 
     else if (hora >= 12 && hora < 18) {
         //BOA TARDE
         mensagem.innerHTML = `Agora são ${hora}h${minuto}m. <strong>Boa tarde!</strong>`
-        imagem.src = 'tarde.png'
+        imagem.src = 'tarde.png' // Para carregar imagem da tarde
         document.body.style.backgroundColor = '#b9846f'
     }
 
     else if (hora >= 18 && hora < 24) {
         //BOA NOITE
         mensagem.innerHTML = `Agora são ${hora}h${minuto}m. <strong>Boa noite!</strong>`
-        imagem.src = 'noite.png'
+        imagem.src = 'noite.png' // Para carregar a imagem da noite
         document.body.style.backgroundColor = '#003F7D'
     }
 }
