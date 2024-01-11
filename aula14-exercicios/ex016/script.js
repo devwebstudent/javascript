@@ -6,7 +6,7 @@ function contar() {
     let resultado = document.getElementById('resultado')
 
     if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
-        resultado.innerHTML = 'Impossível contar' // No caso de deixarmos algum campo em branco
+        resultado.innerHTML = 'Impossível contar. Tente novamente!' // No caso de deixarmos algum campo em branco
 
     } else {
         resultado.innerHTML = 'Contando: <br>' // Vai aparecer contando se eu colocar os dados corretamente
