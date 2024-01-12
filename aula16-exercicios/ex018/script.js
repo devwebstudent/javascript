@@ -24,7 +24,7 @@ function adicionar() { // Para adicionar, tenho que verificar se é um número e
         valores.push(Number(num.value)) // Vamos adicionar o número digitado no input dentro do nosso array.
         let item = document.createElement('option') // Estamos criando option para nosso select.
         item.text = `Valor ${num.value} adicionado.` // Esse item vai ter o seguinte texto.
-        lista.appendChild(item) // Adicionando nosso item dentro da lista.
+        lista.appendChild(item) // Adicionando nosso item (option) dentro da lista (select).
         res.innerHTML = '' // Para que seja limpa a nossa div res caso seja adicionado algum novo número.
     } else {
         window.alert('Valor inválido ou já encontrado na lista.')
